@@ -98,9 +98,8 @@ on:
     branches:
       - 'releases/**'
       - '!releases/**-alpha'
-      - ${{ github.action_ref }}
-
-
+      - '!releases/**-beta'
+      
 jobs:
   build:
     runs-on: ubuntu-latest
