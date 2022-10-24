@@ -98,7 +98,7 @@ on:
     branches:
       - 'releases/**'
       - '!releases/**-alpha'
-      - ${{ github.ref }}
+      - ${{ github.action_ref }}
 
 
 jobs:
